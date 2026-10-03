@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A friendly guide to getting started at our company.">
+  <title>Welcome to Our Company</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, sans-serif;
+      color: #18312b;
+      background: #f4f8f6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 1.5rem;
+      text-align: center;
+      color: #fff;
+      background: #176b55;
+    }
+
+    header p {
+      max-width: 38rem;
+      margin: 1rem auto 1.5rem;
+    }
+
+    h1,
+    h2,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      line-height: 1.15;
+    }
+
+    main {
+      width: min(100% - 2rem, 48rem);
+      margin: 2rem auto;
+    }
+
+    section {
+      margin-bottom: 1rem;
+      padding: 1.5rem;
+      border: 1px solid #d7e4de;
+      border-radius: 0.75rem;
+      background: #fff;
+    }
+
+    section h2 {
+      margin-bottom: 0.5rem;
+      color: #176b55;
+    }
+
+    .greetings {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+      gap: 0.75rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .greetings li {
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      background: #edf5f1;
+    }
+
+    .greetings span {
+      display: block;
+      font-size: 0.875rem;
+      color: #425c53;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.7rem 1.2rem;
+      border: 2px solid #fff;
+      border-radius: 0.4rem;
+      color: #18312b;
+      background: #fff;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #edf5f1;
+    }
+
+    .button:focus-visible {
+      outline: 3px solid #f2c14e;
+      outline-offset: 3px;
+    }
+
+    footer {
+      padding: 1rem;
+      text-align: center;
+      color: #425c53;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Company</h1>
+    <p>We’re glad you’re here. This page will help you feel at home and know what to expect as you get started.</p>
+    <button class="button" type="button" onclick="document.getElementById('first-day').scrollIntoView({ behavior: 'smooth' })">
+      Get Started
+    </button>
+  </header>
+
+  <main>
+    <section aria-labelledby="about-company">
+      <h2 id="about-company">About the Company</h2>
+      <p>We work together, learn from one another, and support our community. As you settle in, ask questions and share your ideas—we’re happy to help.</p>
+      <ul class="greetings" aria-label="Welcome greetings">
+        <li><span>Igbo</span><span lang="ig">Nnọọ!</span></li>
+        <li><span>Yoruba</span><span lang="yo">Ẹ káàbọ̀!</span></li>
+        <li><span>Hausa</span><span lang="ha">Barka da zuwa!</span></li>
+        <li><span>Nigerian Pidgin</span><span lang="en-NG">You are welcome!</span></li>
+      </ul>
+    </section>
+
+    <section id="first-day" aria-labelledby="first-day-heading">
+      <h2 id="first-day-heading">First Day</h2>
+      <p>Take time to meet your team, get familiar with your workspace, and review any onboarding information you’ve received. Your manager or onboarding buddy can help with your first-day questions.</p>
+    </section>
+
+    <section aria-labelledby="important-contacts">
+      <h2 id="important-contacts">Important Contacts</h2>
+      <p>Keep these roles in mind as you settle in:</p>
+      <ul>
+        <li><strong>Your manager:</strong> Your guide for team goals, priorities, and day-to-day questions.</li>
+        <li><strong>Onboarding buddy:</strong> A friendly contact for practical tips and getting to know the team.</li>
+        <li><strong>People team:</strong> Your contact for workplace policies, benefits, and employee support.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>We’re excited to have you on the team.</p>
+  </footer>
+</body>
+</html>
